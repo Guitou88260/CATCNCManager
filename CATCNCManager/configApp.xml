@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListParamsApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Mdp>NiFa2400</Mdp>
+  <MdpAdmin>NiFa2400Admin</MdpAdmin>
+  <DataApp>P:\Proto\CATCNCManager</DataApp>
+  <FoTmpApp>C:\Temp</FoTmpApp>
+  <DataAppTest>C:\Users\Guitou\Documents\DevCATCNCManager\Ressources_App</DataAppTest>
+  <FoTmpAppTest>C:\Temp</FoTmpAppTest>
+  <NameApp>CATCNCManager</NameApp>
+  <DgvDesact>LavenderBlush</DgvDesact>
+  <DgvBloq>buttonface</DgvBloq>
+  <DgvStock>MintCream</DgvStock>
+  <ColRefA>Numéro article, BT ou projet</ColRefA>
+  <VerifColRefA>(6) Longueur de chaîne inférieure à "5" et supérieure à "11" caractère(s) ou caractère ou chaîne différent de "NA" interdits, (7) Caractère(s) autre que "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ-." interdit(s)</VerifColRefA>
+  <ColRefB>Numéro NF</ColRefB>
+  <VerifColRefB>(6) Longueur de chaîne inférieure à "10" et supérieure à "10" caractère(s) ou caractère ou chaîne différent de "NA" interdits, (7) Caractère(s) autre que "0123456789NF" interdit(s)</VerifColRefB>
+  <ColParamA>Posage 1</ColParamA>
+  <VerifColParamA>(7) Caractère(s) autre que "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ-." interdit(s)</VerifColParamA>
+  <ColParamB>Posage 2</ColParamB>
+  <VerifColParamB>(7) Caractère(s) autre que "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ-." interdit(s)</VerifColParamB>
+  <ColParamC>Posage 3</ColParamC>
+  <VerifColParamC>(7) Caractère(s) autre que "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ-." interdit(s)</VerifColParamC>
+  <ColParamD>ParamD</ColParamD>
+  <VerifColParamD>(7) Caractère(s) autre que "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ-." interdit(s)</VerifColParamD>
+  <ColParamE>ParamE</ColParamE>
+  <VerifColParamE>(7) Caractère(s) autre que "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ-." interdit(s)</VerifColParamE>
+  <ColParamF>ParamF</ColParamF>
+  <VerifColParamF>(7) Caractère(s) autre que "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ-." interdit(s)</VerifColParamF>
+  <ColParamG>ParamG</ColParamG>
+  <VerifColParamG>(7) Caractère(s) autre que "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ-." interdit(s)</VerifColParamG>
+  <ColParamH>ParamH</ColParamH>
+  <VerifColParamH>(7) Caractère(s) autre que "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ-." interdit(s)</VerifColParamH>
+</ListParamsApp>

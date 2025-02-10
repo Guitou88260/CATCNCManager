@@ -1,0 +1,508 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4C747F90-6616-4B19-9279-FF8B0B5912E6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>CATCNCManager.My.MyApplication</StartupObject>
+    <RootNamespace>CATCNCManager</RootNamespace>
+    <AssemblyName>CATCNCManager</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Guillaume\Desktop\Essai\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>Off</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>Off</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Divers\Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>AB21080BBBF2DCD49A9FE23005A84CD7D0998022</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>CATCNCManager_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="office">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Appli_CATIA_NIVAROX.My" />
+    <Import Include="Appli_CATIA_NIVAROX.My.Resources" />
+    <Import Include="INFITF" />
+    <Import Include="Microsoft.Office" />
+    <Import Include="Microsoft.Office.Interop.Excel" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Drawing.Design" />
+    <Import Include="System.Drawing.Imaging" />
+    <Import Include="System.IO" />
+    <Import Include="System.Runtime.Serialization" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Xml.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Fonctions\Fonctions_FOCAS.vb" />
+    <Compile Include="Fonctions\FctXMLParamApp.vb" />
+    <Compile Include="Forms_Autres\Form_Analyse_Tps_Cycle.Designer.vb">
+      <DependentUpon>Form_Analyse_Tps_Cycle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_Autres\Form_Analyse_Tps_Cycle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_Autres\Form_CATIA_Vers_Listing_Outils.Designer.vb">
+      <DependentUpon>Form_CATIA_Vers_Listing_Outils.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_Autres\Form_CATIA_Vers_Listing_Outils.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_Autres\Form_Listing_Outils_Vers_CATIA.Designer.vb">
+      <DependentUpon>Form_Listing_Outils_Vers_CATIA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_Autres\Form_Listing_Outils_Vers_CATIA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_Autres\Form_Generation_Fiche_Outils.Designer.vb">
+      <DependentUpon>Form_Generation_Fiche_Outils.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_Autres\Form_Generation_Fiche_Outils.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_Autres\Form_Listing_Prog_Vers_CATIA.Designer.vb">
+      <DependentUpon>Form_Listing_Prog_Vers_CATIA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_Autres\Form_Listing_Prog_Vers_CATIA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_Autres\Form_Filtre.Designer.vb">
+      <DependentUpon>Form_Filtre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_Autres\Form_Filtre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_Autres\Form_Historique.Designer.vb">
+      <DependentUpon>Form_Historique.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_Autres\Form_Historique.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_Config\Form_Listing_Config_Conversion_Outils.Designer.vb">
+      <DependentUpon>Form_Listing_Config_Conversion_Outils.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_Config\Form_Listing_Config_Conversion_Outils.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_Config\Form_Listing_Config_FO.Designer.vb">
+      <DependentUpon>Form_Listing_Config_FO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_Config\Form_Listing_Config_FO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_Config\Form_Listing_Config_Outils.Designer.vb">
+      <DependentUpon>Form_Listing_Config_Outils.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_Config\Form_Listing_Config_Outils.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_Config\Form_Listing_Config_Plaq_Tournage_Stds.Designer.vb">
+      <DependentUpon>Form_Listing_Config_Plaq_Tournage_Stds.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_Config\Form_Listing_Config_Plaq_Tournage_Stds.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_Config\Form_Listing_Config_Outils_Tournage_Stds.Designer.vb">
+      <DependentUpon>Form_Listing_Config_Outils_Tournage_Stds.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_Config\Form_Listing_Config_Outils_Tournage_Stds.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_Config\Form_Listing_Config_Outils_Fraisage_Stds.Designer.vb">
+      <DependentUpon>Form_Listing_Config_Outils_Fraisage_Stds.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_Config\Form_Listing_Config_Outils_Fraisage_Stds.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_Demarrage\Form_MDP_Admin.Designer.vb">
+      <DependentUpon>Form_MDP_Admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_Demarrage\Form_MDP_Admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_FOCAS\Form_Tab_Outils.Designer.vb">
+      <DependentUpon>Form_Tab_Outils.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_FOCAS\Form_Tab_Outils.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_Listing\Form_Listing_Outils_Tournage.Designer.vb">
+      <DependentUpon>Form_Listing_Outils_Tournage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_Listing\Form_Listing_Outils_Tournage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_Listing\Form_Listing_Outils_Fraisage.Designer.vb">
+      <DependentUpon>Form_Listing_Outils_Fraisage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_Listing\Form_Listing_Outils_Fraisage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fonctions\Fonctions_CATIA.vb" />
+    <Compile Include="Fonctions\Fonctions_CSV.vb" />
+    <Compile Include="Fonctions\Fonctions_Tableau.vb" />
+    <Compile Include="Fonctions\Fonctions_Diverses.vb" />
+    <Compile Include="Forms_Autres\Form_Choix_Num_Prog_Listing.Designer.vb">
+      <DependentUpon>Form_Choix_Num_Prog_Listing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_Autres\Form_Choix_Num_Prog_Listing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fonctions\Fonctions_Messages.vb" />
+    <Compile Include="Forms_Demarrage\Form_MDP_Demarrage_Application.Designer.vb">
+      <DependentUpon>Form_MDP_Demarrage_Application.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_Demarrage\Form_MDP_Demarrage_Application.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_Config\Form_Listing_Config_Machines.Designer.vb">
+      <DependentUpon>Form_Listing_Config_Machines.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_Config\Form_Listing_Config_Machines.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_Listing\Form_Listing_Prog.Designer.vb">
+      <DependentUpon>Form_Listing_Prog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_Listing\Form_Listing_Prog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_Demarrage\Form_Principale.Designer.vb">
+      <DependentUpon>Form_Principale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms_Demarrage\Form_Principale.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fonctions\Fonctions_Form.vb" />
+    <Compile Include="Fonctions\Fonctions_DGV.vb" />
+    <Compile Include="Fonctions\Fonctions_Filtres_DGV.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Divers\ConstantesApp.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms_Autres\Form_Analyse_Tps_Cycle.resx">
+      <DependentUpon>Form_Analyse_Tps_Cycle.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_Autres\Form_CATIA_Vers_Listing_Outils.resx">
+      <DependentUpon>Form_CATIA_Vers_Listing_Outils.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_Autres\Form_Listing_Outils_Vers_CATIA.resx">
+      <DependentUpon>Form_Listing_Outils_Vers_CATIA.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_Autres\Form_Generation_Fiche_Outils.resx">
+      <DependentUpon>Form_Generation_Fiche_Outils.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_Autres\Form_Listing_Prog_Vers_CATIA.resx">
+      <DependentUpon>Form_Listing_Prog_Vers_CATIA.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_Autres\Form_Filtre.resx">
+      <DependentUpon>Form_Filtre.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_Autres\Form_Historique.resx">
+      <DependentUpon>Form_Historique.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_Config\Form_Listing_Config_Conversion_Outils.resx">
+      <DependentUpon>Form_Listing_Config_Conversion_Outils.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_Config\Form_Listing_Config_FO.resx">
+      <DependentUpon>Form_Listing_Config_FO.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_Config\Form_Listing_Config_Outils.resx">
+      <DependentUpon>Form_Listing_Config_Outils.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_Config\Form_Listing_Config_Plaq_Tournage_Stds.resx">
+      <DependentUpon>Form_Listing_Config_Plaq_Tournage_Stds.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_Config\Form_Listing_Config_Outils_Tournage_Stds.resx">
+      <DependentUpon>Form_Listing_Config_Outils_Tournage_Stds.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_Config\Form_Listing_Config_Outils_Fraisage_Stds.resx">
+      <DependentUpon>Form_Listing_Config_Outils_Fraisage_Stds.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_Demarrage\Form_MDP_Admin.resx">
+      <DependentUpon>Form_MDP_Admin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_FOCAS\Form_Tab_Outils.resx">
+      <DependentUpon>Form_Tab_Outils.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_Listing\Form_Listing_Outils_Tournage.resx">
+      <DependentUpon>Form_Listing_Outils_Tournage.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_Listing\Form_Listing_Outils_Fraisage.resx">
+      <DependentUpon>Form_Listing_Outils_Fraisage.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_Autres\Form_Choix_Num_Prog_Listing.resx">
+      <DependentUpon>Form_Choix_Num_Prog_Listing.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_Demarrage\Form_MDP_Demarrage_Application.resx">
+      <DependentUpon>Form_MDP_Demarrage_Application.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_Config\Form_Listing_Config_Machines.resx">
+      <DependentUpon>Form_Listing_Config_Machines.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_Listing\Form_Listing_Prog.resx">
+      <DependentUpon>Form_Listing_Prog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_Demarrage\Form_Principale.resx">
+      <DependentUpon>Form_Principale.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="INFITF">
+      <Guid>{14F197B2-0771-11D1-A5B1-00A0C9575177}</Guid>
+      <VersionMajor>0</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="configApp.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Divers\Icon.ico" />
+    <Content Include="Fwlib32.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\FondApp.png" />
+    <None Include="Resources\Tps_Programme.png" />
+    <None Include="Resources\Tps_Chgt_Outil.png" />
+    <None Include="Resources\Config_Conv_Outil.png" />
+    <None Include="Resources\Type_Outil_Tournage.png" />
+    <None Include="Resources\Outil_2T_Casse.png" />
+    <None Include="Resources\Instruction_PP.png" />
+    <None Include="Resources\Chgt_Outil.png" />
+    <None Include="Resources\Voir_Dossier.png" />
+    <None Include="Resources\Selectionner_Dossier.png" />
+    <None Include="Resources\Generer_Fiche_Outils.png" />
+    <None Include="Resources\Attention.png" />
+    <None Include="Resources\Selectionner_Dans_Process.png" />
+    <None Include="Resources\Selectionner_Programme.png" />
+    <None Include="Resources\Config_Posage_C480.png" />
+    <None Include="Resources\Plaquette.png" />
+    <None Include="Resources\Config_Plaquette.png" />
+    <None Include="Resources\Config_Machine.png" />
+    <None Include="Resources\Config_Outil_Tournage.png" />
+    <None Include="Resources\Config_Outil_2T.png" />
+    <None Include="Resources\Supprimer_Filtre_DGV.png" />
+    <None Include="Resources\Outil_Tournage.png" />
+    <None Include="Resources\Envoyer_Vers_DGV.png" />
+    <None Include="Resources\Envoyer_Vers_Process.png" />
+    <None Include="Resources\Filtrer.png" />
+    <None Include="Resources\Form_Verticales.png" />
+    <None Include="Resources\Form_Horizontales.png" />
+    <None Include="Resources\Form_Cascades.png" />
+    <None Include="Resources\Icone_Posage_C480.png" />
+    <None Include="Resources\Apercu_Origine_Positive.png" />
+    <None Include="Resources\Apercu_Origine_Negative.png" />
+    <None Include="Resources\Documentation.png" />
+    <None Include="Resources\Programme.png" />
+    <None Include="Resources\Phase.png" />
+    <None Include="Resources\Lancer.png" />
+    <None Include="Resources\Ouvrir.png" />
+    <None Include="Resources\Verrouiller.png" />
+    <None Include="Resources\Machine.png" />
+    <None Include="Resources\Deverrouiller.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
